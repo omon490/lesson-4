@@ -10,7 +10,11 @@ if (tempForm) {
     var celsiy = Number(tempInputCelsiy.value);
     var natija = celsiy * 9 / 5 + 32;
 
-    tempInputFrang.value = natija;
+    if (tempInputCelsiy.value ===``){
+      tempInputFrang.textContent = `Son kiriting`;
+    } else {
+      tempInputFrang.textContent = natija;
+    }
   });
 };
 
@@ -50,8 +54,20 @@ if (elTravelForm) {
 
 // gsdfgsdfgsdf
 
-var jogForm = document.querySelector(`.js-jog-form`);
-if (jogForm){
-  var jogInput = jogForm.querySelector(`.jog-input`);
-  var jog
-}
+// var jogForm = document.querySelector(`.js-jog-form`);
+// if (jogForm){
+//   var jogInput = jogForm.querySelector(`.jog-input`);
+//   var jogRainInput = jogForm.querySelector(`.rain-input`);
+//   var jogZalInput = jogForm.querySelector(`.zal-input`);
+//   var jogHeading = document.querySelector(`.jog-heading`);
+//   var jogYes = document.querySelector(`.yes`);
+//   var jogNo = document.querySelector(`.no`);
+// }
+
+// if (jogForm) {
+//   jogForm.addEventListener(`change`, function()){
+//     var temperature = '';
+
+//     temperature = jogInput.value;
+//   }
+// }
