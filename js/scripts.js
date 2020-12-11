@@ -47,3 +47,11 @@ if (elTravelForm) {
     elPlane.textContent =  `${Math.floor(travelLength / scorePlane)} soat ${Math.floor(((travelLength / scorePlane) * 60) % 60)} minut ${Math.floor((((travelLength / scorePlane) * 60) * 60) % 60)}sek`;
   });
 };
+
+// gsdfgsdfgsdf
+
+var jogForm = document.querySelector(`.js-jog-form`);
+if (jogForm){
+  var jogInput = jogForm.querySelector(`.jog-input`);
+  var jog
+}
